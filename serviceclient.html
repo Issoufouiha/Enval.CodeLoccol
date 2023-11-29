@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ENVAL-PROJECT</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-bar" id="essai">
+            <div class="logo">
+                <img src="logo-cabture.png" alt="logo">
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a>
+                </li>
+                <li>
+                    <a href="commande.html"><i class="fa-solid fa-cart-shopping"></i><span>Commande</span></a>
+                </li>
+                <li>
+                    <a href="suivi.html"><i class="fa-solid fa-bag-shopping"></i><span>Suivi</span></a>
+                </li>
+                <li class="S-C">
+                    <a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service Client</span></a>
+                </li>
+                <div class="bas">
+                    <li>
+                        <a href="parametreDeCompte.html"><i class="fa-solid fa-gear"></i><span>Paramètre Compte</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="contenu">
+            <div class="nav-bar">
+                <div class="bell">
+                    <div class="rouge">
+
+                    </div>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <!-- <img src="images/avatar.jpg" id="mieu"> -->
+                <div class="essaie">
+                    <img src="images/avatar.jpg" id="profilSiebarre" />
+                  </div>
+            </div>
+            <a href="#essai"><i class="fa-solid fa-bars" id="hamburger"></i></a>
+            <div class="contenu-factur">
+                <h3>Sujet</h3>
+                <textarea name="sujet" id="lm" rows="2"></textarea>
+                <h3>Message</h3>
+                <textarea name="sms" id="m" rows="20"></textarea>
+                <br>
+                <a href="#"><button>Envoyer</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="serviceClients.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ENVAL-PROJECT</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-bar" id="essai">
+            <div class="logo">
+                <img src="logo-cabture.png" alt="logo">
+            </div>
+            <ul>
+                <li class="D">
+                    <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a>
+                </li>
+                <li>
+                    <a href="commande.html"><i class="fa-solid fa-cart-shopping"></i><span>Commande</span></a>
+                </li>
+                <li>
+                    <a href="suivi.html"><i class="fa-solid fa-bag-shopping"></i><span>Suivi</span></a>
+                </li>
+                <li>
+                    <a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service Client</span></a>
+                </li>
+                <div class="bas">
+                    <li>
+                        <a href="parametreDeCompte.html"><i class="fa-solid fa-gear"></i><span>Paramètre Compte</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="contenu">
+            <div class="nav-bar">
+                <div class="bell">
+                    <div class="rouge">
+
+                    </div><i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="essaie">
+                    <img src="images/avatar.jpg" id="profilSiebarre" />
+                  </div>
+            </div>
+            <a href="#essai"><i class="fa-solid fa-bars" id="hamburger"></i></a>
+            <div class="contenu-dash">
+                <div class="cercle-bar">
+                    <div class="part-pos">
+                        <h2>Analyses positifs</h2>
+                        <div class="pos">
+                            <br><br>
+                            <div class="ii">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div class="ptf">
+                                <h3>Positif</h3>
+                            </div>
+                            <div class="c-pos">
+                                <div>
+                                    <canvas id="myChart-p"></canvas>
+                                </div>
+                                <h2>80%</h2>
+                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                                <script>
+                                    const ptx = document.getElementById('myChart-p');
+
+                                    new Chart(ptx, {
+                                        type: 'doughnut',
+                                        data: {
+                                            labels: ['Red'],
+                                            datasets: [{
+                                                data: [80, 20],
+                                                backgroundColor: [
+                                                    '#fff',
+                                                    '#B7DBCF'
+                                                ],
+                                                borderWidth: 1
+                                            }]
+                                        },
+                                        options: {
+                                            circumference: 290,
+                                            rotation: -147,
+                                            cutout: '75%',
+                                            plugins: {
+                                                legend: {
+                                                    display: false
+                                                }
+                                            }
+                                        },
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-neg">
+                        <h2>Analyses negatifs</h2>
+                        <div class="neg">
+                            <br><br>
+                            <div class="i">
+                                <i class="fa-solid fa-droplet"></i>
+                            </div>
+                            <div class="ngt">
+                                <h3>Negatif</h3>
+                            </div>
+                            <div class="crcl-bar">
+                                <div>
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                                <h2>20%</h2>
+                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                                <script>
+                                    const dtx = document.getElementById('myChart');
+
+                                    new Chart(dtx, {
+                                        type: 'doughnut',
+                                        data: {
+                                            labels: [''],
+                                            datasets: [{
+                                                data: [50, 50],
+                                                backgroundColor: [
+                                                    '#55A0B1',
+                                                    '#B7DBCF'
+                                                ],
+                                                borderWidth: 1
+                                            }]
+                                        },
+                                        options: {
+                                            circumference: 290,
+                                            rotation: -147,
+                                            cutout: '75%',
+                                            plugins: {
+                                                legend: {
+                                                    display: false
+                                                }
+                                            }
+                                        },
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progresse-bar">
+                    <h2>Analyses par mois</h2>
+                    <div>
+                        <canvas id="myChart-pro"></canvas>
+                    </div>
+
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                    <script>
+                        const rtx = document.getElementById('myChart-pro');
+
+                        new Chart(rtx, {
+                            type: 'bar',
+                            data: {
+                                labels: ['JAN', 'FEV', 'MAR', 'AVRIL', 'MAI', 'JUIN', 'JUIL', 'AOUT', 'SEP', 'OCT', 'NOV', 'DEC'],
+                                datasets: [{
+                                    data: [12, 10, 15, 9, 13, 7, 10, 13, 13, 13, 13, 13],
+                                    borderWidth: 1,
+                                    hoverBackgroundColor: "#55A0B1",
+                                    backgroundColor: "#fff",
+                                    barThickness: 45,
+                                }]
+                            },
+                            options: {
+                                plugins: {
+                                    legend: {
+                                        display: false
+                                    },
+                                },
+                                scales: {
+                                    y: {
+                                        beginAtZero: true,
+                                        display: false,
+                                    }
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Cercle bar pour la partis negative-->
+    <script src="chart.umd.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

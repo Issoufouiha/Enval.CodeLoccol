@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ENVAL-PROJECT</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="side-bar" id="essai">
+        <div class="logo">
+          <img src="logo-cabture.png" alt="logo" />
+        </div>
+        <ul>
+          <li>
+            <a href="dashboard.html"
+              ><i class="fa-solid fa-chart-simple"></i><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="facture.html"
+              ><i class="fa-solid fa-peace"></i><span>Facture</span></a
+            >
+          </li>
+          <li>
+            <a href="commande.html"
+              ><i class="fa-solid fa-cart-shopping"></i><span>Commande</span></a
+            >
+          </li>
+          <li>
+            <a href="suivi.html"
+              ><i class="fa-solid fa-bag-shopping"></i><span>Suivi</span></a
+            >
+          </li>
+          <li>
+            <a href="serviceclient.html"
+              ><i class="fa-solid fa-comment-dots"></i
+              ><span>Service Client</span></a
+            >
+          </li>
+          <div class="bas">
+            <li class="S-C">
+              <a href="parametreDeCompte.html"
+                ><i class="fa-solid fa-gear"></i
+                ><span>Paramètre Compte</span></a
+              >
+            </li>
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i
+                ><span>Déconnexion</span></a
+              >
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="contenu">
+        <div class="nav-bar">
+          <div class="bell">
+            <div class="rouge"></div>
+            <i class="fa-regular fa-bell"></i>
+          </div>
+          <div class="essaie">
+            <img src="images/avatar.jpg" id="profilSiebarre" />
+          </div>
+        </div>
+        <a href="#essai"><i class="fa-solid fa-bars" id="hamburger"></i></a>
+        <div class="contenuCompte">
+          <h1 style="font-size: 30px; padding: 1.5rem">Parametre du compte</h1>
+          <div class="link">
+            <span
+              ><a href="dashboard.html"
+                ><i class="fa-solid fa-arrow-left"></i> Retour au tableau de
+                bord</a
+              ></span
+            >
+            <span id="btnSpan">
+              <button id="modifiPassword">Modifier le mot de passe</button>
+              <button id="supprimCompt">Supprimer le compte</button>
+            </span>
+          </div>
+          <div class="mdfProfil">
+            <div class="profil">
+              <h2>Modifier le profil</h2>
+              <span>Nom</span><br />
+              <input type="text" id="nomValue" /><br />
+              <span>Email</span><br />
+              <input type="email" id="emailValue" /><br />
+              <span>Biographie</span><br />
+              <textarea
+                name="biographie"
+                id="biographieValue"
+                cols="30"
+                rows="10"
+              ></textarea
+              ><br />
+              <button id="sendMessage">Envoyer</button>
+            </div>
+            <div class="avatar">
+              <h2>Ton avatar</h2>
+              <div class="image">
+                <img src="images/avatar.jpg" alt="" id="avatarProfil" />
+              </div>
+              <div class="btnAvatar">
+                <span id="btnAvatar">
+                  <button id="modifiPhoto">
+                    <label for="input-file">Modifier la photo</label>
+                  </button>
+                  <input type="file" id="input-file" accept="image/*" style="display: none"/>
+                  <button id="supprimphoto">Supprimer la photo</button>
+                </span>
+                <div class="mdpSetting">
+                  <h1>Modifier le mot de passe</h1>
+                  <span>Ancien mot de passe</span><br />
+                  <input type="password" id="ancienMdp" /><br />
+                  <span>Nouveau mot de passe</span><br />
+                  <input type="password" id="nouveauMdp" /><br />
+                  <span>Confirmation</span><br />
+                  <input type="password" id="confirmationMdp" /><br />
+                  <a id="PwdEditer"><button id="envoyerNvMdp">Envoyer</button></a>
+                </div>
+                <div class="notification">
+                  <h1 id="notification1">Notification</h1>
+                  <span id="message">Message</span>
+                </div>
+                <a href="" class="fermer"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      tinymce.init({
+            selector: 'textarea#biographieValue',
+            // plugins: 'lists link image',
+            // toolbar: 'undo redo | bold italic | bullist numlist | link',
+        });
+    </script>
+    <script src="parametreDeCompte.js"></script>
+  </body>
+</html>
+
+

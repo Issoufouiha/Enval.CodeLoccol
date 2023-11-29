@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ENVAL-PROJECT</title>
+  </head>
+
+  <body>
+    <div class="contenuIndex">
+      <form  id="monFormulaire">
+        <div class="logoImg">
+          <img src="Enval logo.png" alt="" />
+        </div>
+          <input type="text" placeholder="Identifiant"  id="recupValueIdentifiant"/><br>
+          <input type="password" placeholder="password"  id="recupValuePassword"/><br><br>
+          <span><a href="#">Forgot your password</a></span><br>
+          <a id="myConnexion1"><button id="myConnexion" onclick="verificationProfil(event)">Connexion</button></a>
+      </form>
+    </div>
+    <div class="notification">
+        <h1 id="h1notification">Notification</h1>
+        <span id="message">Oups !!! </span><br>
+        <span id="message1">Utilisateur non identifier </span>
+    </div>
+    <div class="compteBloquer">
+        <h1 id="h1notification">Conpte bloquer</h1>
+        <span id="spanMessage">Oups !!! </span><br>
+        <span id="spanMessage">Votre compte est bloquer temporairement </span>
+    </div>
+    <div class="timerBlock">
+      <h1 id="h1notification">Timer</h1>
+      <span id="message">Temps de deblocage</span><br><br>
+      <span id="my-hours">00:00:00</span><br><br><br>
+  </div>
+    <script src="index.js"></script>
+  </body>
+</html>

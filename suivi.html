@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ENVAL-PROJECT</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar" id="essai">
+            <div class="logo">
+                <img src="logo-cabture.png" alt="logo">
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a>
+                </li>
+                <li>
+                    <a href="commande.html"><i class="fa-solid fa-cart-shopping"></i><span>Commande</span></a>
+                </li>
+                <li class="S">
+                    <a href="suivi.html"><i class="fa-solid fa-bag-shopping"></i><span>Suivi</span></a>
+                </li>
+                <li>
+                    <a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service Client</span></a>
+                </li>
+                <div class="bas">
+                    <li>
+                        <a href="parametreDeCompte.html"><i class="fa-solid fa-gear"></i><span>Paramètre Compte</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="contenu">
+            <div class="nav-bar">
+                <div class="bell">
+                    <div class="rouge">
+
+                    </div>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <!-- <img src="images/avatar.jpg" id="mieu"> -->
+                <div class="essaie">
+                    <img src="images/avatar.jpg" id="profilSiebarre" />
+                  </div>
+            </div>
+            <a href="#essai"><i class="fa-solid fa-bars" id="hamburger"></i></a>
+            <br>
+            <div class="contenu-facture" id="gg">
+                <br>
+                <br>
+                <div class="rech" style="border-top: 1px solid black; width: calc(95%); margin: auto;">
+                    <div class="h-s">
+                        <h3 id="prepa">Suivi des échantillons</h3>
+                    </div>
+                    <div class="rech-in"><i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="inputValue">
+                       </div>
+                </div>
+                <table style="width: calc(95%); margin: auto;">
+                    <thead id="cmd">
+                        <tr>
+                            <th id="filterIcon">Lot <span class="iconsCache1"><i class="fa-solid fa-arrow-down-z-a"></i></span></th>
+                            <th id="Etat">Etat <span class="iconsCache2"><i class="fa-solid fa-arrow-down-z-a"></i></span></th>
+                            <th id="Date">Date prèvue <span class="iconsCache3"><i class="fa-solid fa-arrow-down-z-a"></i></span></th>
+                            <th id="Rapport">Rapport <span class="iconsCache4"><i class="fa-solid fa-arrow-down-z-a"></i></span></th>
+                            <th id="Cliquer">Cliquer pour voir le raport <span class="iconsCache5"></span></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="suiviTbody">
+                        
+                        <tr>
+                            <td style="border-left: none;">
+                                Conductivité électrique</td>
+                            <td>
+                                Non reçu</td>
+                            <td>
+                                10/03/2023</td>
+                                <td>
+                                    Non disponible</td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left:none;">
+                                Zinc</td>
+                            <td>
+                                Non reçu 
+                            </td>
+                            <td>
+                                10/03/2023
+                            </td>
+                            <td >
+                                Non Disponible
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;">
+                                E2002302023
+                            <td>
+                                Non reçu
+                            </td>
+                            <td>
+                                15/03/2023
+                            </td>
+                            <td>
+                                Non disponible
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;">
+                                Fer</td>
+                            <td>
+                                reçu
+                            </td>
+                            <td>
+                                27/03/2023
+                            </td>
+                            <td>
+                                disponible
+                            </td>
+                            <td style="border-right: none;">
+                               <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;">
+                                pH Temperature</td>
+                            <td>
+                                reçu
+                            </td>
+                            <td>
+                                30/03/2023
+                            </td>
+                            <td>
+                                Non disponible
+                            </td>
+                            <td style="border-right: none;">
+                                <button  class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=" border-left: none;">
+                                CO2 libre</td>
+                            <td>
+                                reçu
+                            </td>
+                            <td>
+                                5/04/2023
+                            </td>
+                            <td>
+                                disponible
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;">
+                                Carbonate</td>
+                            <td>
+                                reçu
+                            </td>
+                            <td>
+                                10/04/2023
+                            </td>
+                            <td>
+                                Non disponible 
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;border-bottom: none;">
+                                TE20230190</td>
+                            <td>
+                               reçu
+                            </td>
+                            <td>
+                                20/04/2023
+                            </td>
+                            <td>
+                               Non disponible
+                            </td>
+                            <td style="border-right: none;border-bottom: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="myArray.js"></script>
+    <script src="suivi.js"></script>
+</body>
+</html>

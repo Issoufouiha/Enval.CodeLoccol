@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ENVAL-PROJECT</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-bar" id="essai">
+            <div class="logo">
+                <img src="logo-cabture.png" alt="logo">
+            </div>
+            <ul>
+                <li>
+                    <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i><span>Dashboard</span></a>
+                </li>
+                <li class="F">
+                    <a href="facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a>
+                </li>
+                <li>
+                    <a href="commande.html"><i class="fa-solid fa-cart-shopping"></i><span>Commande</span></a>
+                </li>
+                <li>
+                    <a href="suivi.html"><i class="fa-solid fa-bag-shopping"></i><span>Suivi</span></a>
+                </li>
+                <li>
+                    <a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service Client</span></a>
+                </li>
+                <div class="bas">
+                    <li>
+                        <a href="parametreDeCompte.html"><i class="fa-solid fa-gear"></i><span>Paramètre
+                                Compte</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html"><i
+                                class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="contenu">
+            <div class="nav-bar">
+                <div class="bell">
+                    <div class="rouge">
+
+                    </div>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <!-- <img src="images/avatar.jpg" id="mieu"> -->
+                <div class="essaie">
+                    <img src="images/avatar.jpg" id="profilSiebarre" />
+                </div>
+            </div>
+            <a href="#essai"><i class="fa-solid fa-bars" id="hamburger"></i></a>
+            <br>
+            <div class="contenu-facture">
+                <br>
+                <br>
+                <div class="rech" style="border-top: 1px solid black; width: calc(95%); margin: auto;">
+                    <div class="h-f">
+                        <h3>Facture</h3>
+                    </div>
+                    <div class="rech-in">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="inputValue">
+                    </div>
+                </div>
+                <table style="width: calc(95%); margin: auto;">
+                    <thead id="marge">
+                        <tr>
+                            <th id="Facture">Facture <span class="iconsCache1"><i class="fa-solid fa-arrow-down-z-a"
+                                        style="color: white;"></i></span></th>
+                            <th id="Laboratoire">Laboratoire <span class="iconsCache2"><i
+                                        class="fa-solid fa-arrow-down-z-a"></i></span></th>
+                            <th id="Date">Date <span class="iconsCache3"><i
+                                        class="fa-solid fa-arrow-down-z-a"></i></span></th>
+                            <th id="Cliquer">Cliquer pour voir <span class="iconsCache4"><i
+                                        class="fa-solid fa-arrow-down-z-a"></i></span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="factureTbody">
+                        <tr>
+                            <td style="border-left: none;">
+                                000112</td>
+                            <td>
+                                Enval</td>
+                            <td>
+                                10/03/2023</td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left:none;">
+                                000113</td>
+                            <td>
+                                Biochimie
+                            </td>
+                            <td>
+                                10/03/2023
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;">
+                                000114</td>
+                            <td>
+                                Biologie
+                            </td>
+                            <td>
+                                15/03/2023
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;">
+                                000112</td>
+                            <td>
+                                Biologie
+                            </td>
+                            <td>
+                                27/03/2023
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;">
+                                000115</td>
+                            <td>
+                                Enval
+                            </td>
+                            <td>
+                                30/03/2023
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style=" border-left: none;">
+                                000116</td>
+                            <td>
+                                Biochimie
+                            </td>
+                            <td>
+                                5/04/2023
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;">
+                                000117</td>
+                            <td>
+                                Enval
+                            </td>
+                            <td>
+                                10/04/2023
+                            </td>
+                            <td style="border-right: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;border-bottom: none;">
+                                000118</td>
+                            <td>
+                                Géologie
+                            </td>
+                            <td>
+                                20/04/2023
+                            </td>
+                            <td style="border-right: none;border-bottom: none;">
+                                <button class="btn">voir</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="myArray.js"></script>
+    <script src="facture.js"></script>
+</body>
+
+</html>
